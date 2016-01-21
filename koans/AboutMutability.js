@@ -30,7 +30,7 @@ describe("About Mutability", function() {
     };
 
     var aPerson = new Person ("John", "Smith");
-    expect(aPerson.getFullName()).toBe("John Smith";
+    expect(aPerson.getFullName()).toBe("John Smith");
 
     aPerson.getFullName = function () {
       return this.lastname + ", " + this.firstname;
@@ -48,7 +48,7 @@ describe("About Mutability", function() {
       this.getLastName = function () { return lastname; };
       this.getFullName = function () { return fullName; };
     }
-    var aPerson = new Person ("John", "Smith");
+    var aPerson = new Person ("Penny", "Andrews");
 
     aPerson.firstname = "Penny";
     aPerson.lastname = "Andrews";
